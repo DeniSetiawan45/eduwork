@@ -1,0 +1,237 @@
+/* style.css - External stylesheet untuk website Deni Setiawan */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fefcf5;
+    scroll-behavior: smooth;
+}
+
+/* Navbar styling */
+.custom-navbar {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.brand-logo {
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #f5b042, #e67e22);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+.brand-logo i {
+    color: #f5b042;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    margin-right: 6px;
+}
+
+.nav-link-custom {
+    font-weight: 600;
+    color: #2c3e2f;
+    margin-left: 1.2rem;
+    transition: 0.2s;
+}
+
+.nav-link-custom:hover {
+    color: #f5a623;
+    transform: translateY(-2px);
+}
+
+/* Hero section */
+.hero-section {
+    padding: 60px 40px;
+    background: linear-gradient(145deg, #ffffff 0%, #fff9ef 100%);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #2d3e2b;
+}
+
+.hero-title span {
+    color: #f5a623;
+    border-bottom: 3px solid #f5a623;
+    display: inline-block;
+}
+
+.hero-text {
+    color: #4a5b4a;
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Tombol kuning */
+.btn-custom-yellow {
+    background-color: #f5b042;
+    border: none;
+    color: #2c2c2c;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(245, 176, 66, 0.2);
+}
+
+.btn-custom-yellow:hover {
+    background-color: #e69b2e;
+    transform: scale(1.02);
+    color: white;
+    box-shadow: 0 8px 18px rgba(245, 176, 66, 0.3);
+}
+
+.hero-image {
+    border-radius: 32px;
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* About section */
+.about-section {
+    background-color: #ffffff;
+    padding: 70px 30px;
+    text-align: center;
+    border-bottom: 1px solid #f0ede5;
+}
+
+.section-badge {
+    background: #fef0df;
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #e67e22;
+}
+
+.info-card {
+    background-color: #fefaf2;
+    border-radius: 24px;
+    padding: 1.5rem 1rem;
+    transition: 0.2s;
+    border: 1px solid #ffe6c7;
+    height: 100%;
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: #f5a623;
+    margin-bottom: 12px;
+}
+
+.info-card strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e2f;
+}
+
+/* Portfolio section */
+.portfolio-section {
+    background-color: #fefaf2;
+    padding: 70px 30px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #ffefdb;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px -8px rgba(0,0,0,0.12);
+}
+
+.project-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.project-card h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    color: #2d462a;
+}
+
+/* Footer */
+.footer-custom {
+    background-color: #1f2a1b;
+    color: #ddddbb;
+    padding: 32px 20px;
+    text-align: center;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-section {
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-navbar {
+        padding: 0.8rem 1.2rem;
+    }
+    .hero-section {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hero-image {
+        margin-top: 30px;
+        max-width: 85%;
+    }
+    .btn-custom-yellow {
+        margin-bottom: 10px;
+    }
+    .project-img {
+        height: 190px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .section-badge {
+        font-size: 0.75rem;
+    }
+    .info-card {
+        padding: 1rem;
+    }
+}
+
+/* Smooth scroll offset */
+html {
+    scroll-padding-top: 20px;
+}
